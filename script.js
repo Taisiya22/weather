@@ -16,7 +16,7 @@ function getWeather(e) {
 
 function getFetch(city, days) {
 	return fetch(
-		`http://api.weatherapi.com/v1/forecast.json?key=06e945ae9a224778ae3134342232801&q=${city}&days=${days}`
+		`https://api.weatherapi.com/v1/forecast.json?key=06e945ae9a224778ae3134342232801&q=${city}&days=${days}`
 	).then((res) => {
 		if (!res.ok) {
 			throw new Error(res.statusText);
